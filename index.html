@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>✨ Copy Helper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-title">
+        <h1>🎀 NETFLIX 🎄</h1>
+        <p>✨ สามารถกดปุ่ม Copy เพื่อคัดลอกรหัสไปได้เลยค่ะ 🎁</p>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" value="ikanrealm@gmail.com" readonly>
+            <button onclick="copyText('email')">Copy</button>
+        </div>
+        
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" value="rXLYAwM5bD7cUQp" readonly>
+                <i class="fas fa-eye toggle-password" onclick="togglePassword()"></i>
+            </div>
+            <button onclick="copyText('password')">Copy</button>
+        </div>
+    </div>
+    <div id="newsPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">✕</span>
+            <h2>🎀 คำเตือนน! 💖</h2>
+            <p>🎄 NETFLIX ไม่สามารถดูใน TV ได้จะทำให้รหัสใช้งานกับคนอื่นๆไม่ได้ ✨</p>
+            <div class="music-player">
+                <audio id="bgMusic" preload="auto">
+                    <source src="music.mp3" type="audio/mp3">
+                </audio>
+                <button id="playMusicBtn" class="music-btn">
+                    <i class="fas fa-play"></i> เปิดเพลง
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
